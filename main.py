@@ -2,11 +2,17 @@ def main():
 
     numbers = []
     for i in range(5):
-        number = float(input(f"Enter number {i+1}: "))
+        number = int(input(f"Enter number {i+1}: "))
         numbers.append(number)
+
+    minval = numbers[0]
+    maxval = numbers[0]
+
+
 
     print(*numbers)
     print(maxval, minval)
+
     ########################################
     # Do not delete the return statement
     ########################################
