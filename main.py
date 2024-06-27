@@ -8,7 +8,11 @@ def main():
     minval = numbers[0]
     maxval = numbers[0]
 
-
+    for number in numbers[1:]:
+        if number < minval:
+            minval = number
+        if number > maxval:
+            maxval = number
 
     print(*numbers)
     print(maxval, minval)
